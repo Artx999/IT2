@@ -4,9 +4,11 @@
     function getExif() {
         let img = document.getElementById("img")
         EXIF.getData(img, function () {
+            let filter = ["ExposureBias", "ColorSpace", "ExposureMode", "thumbnail"] // <--- A filter that determines which Tags should be ignored when showing the EXIF info
             let info = EXIF.getAllTags(this)
             let json = JSON.parse(JSON.stringify(info))
             for (let i in json) {
+                if (filter.includes(i)) continue
                 // document.getElementById("info").innerHTML = document.getElementById("info").innerHTML + " " + i + ":" + json[i] + "<br/>";
                 let content = document.getElementById("info").innerHTML
                 document.getElementById("info").innerHTML = content + "<tr><td>" + i + "</td><td>" + json[i] + "</td></tr>"
