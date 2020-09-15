@@ -13,6 +13,8 @@
                 let content = document.getElementById("info").innerHTML
                 document.getElementById("info").innerHTML = content + "<tr><td>" + i + "</td><td>" + json[i] + "</td></tr>"
             }
+            let latRef = json.GPSLatitudeRef; let lat =  json.GPSLatitude
+            let longRef = json.GPSLongitudeRef; let long = GPSLongitude
         })
     }
 </script>
