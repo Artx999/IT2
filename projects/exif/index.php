@@ -20,6 +20,15 @@
         max-height: 70vh;
 
     }
+    table {
+        border: black 3px solid;
+    }
+    th {
+        background-color: gray;
+    }
+    td {
+        border: black 1px solid;
+    }
 </style>
 <?php
 if (file_exists("image.jpg")) {
