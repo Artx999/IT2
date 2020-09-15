@@ -7,7 +7,9 @@
             let info = EXIF.getAllTags(this)
             let json = JSON.parse(JSON.stringify(info))
             for (let i in json) {
-                document.getElementById("info").innerHTML = document.getElementById("info").innerHTML + " " + i + ":" + json[i] + "<br/>";
+                // document.getElementById("info").innerHTML = document.getElementById("info").innerHTML + " " + i + ":" + json[i] + "<br/>";
+                let content = document.getElementById("info").innerHTML
+                document.getElementById("info").innerHTML = content + "<tr><td>" + i + "</td><td>" + json[i] + "</td></tr>"
             }
         })
     }
@@ -26,7 +28,14 @@
 <?php
 if (file_exists("image.jpg")) {
     print "<img src='image.jpg' alt='image' id='img' onload='getExif()'>";
-    print "<p id='info'>Test</p>";
+    print "
+<table id='info'>
+    <tr>
+        <th>Tag</th>
+        <th>Info</th>
+    </tr>
+</table>
+";
     print "
 <form>
     <button formaction='deleteImage.php'>Delete Image</button>
