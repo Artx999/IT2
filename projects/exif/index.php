@@ -21,10 +21,6 @@
 
     }
 </style>
-<form action="uploadImg.php" method="post" enctype="multipart/form-data">
-    <input type="file" name="image" accept="image/jpeg">
-    <button type="submit">Submit image</button>
-</form>
 <?php
 if (file_exists("image.jpg")) {
     print "<img src='image.jpg' alt='image' id='img' onload='getExif()'>";
@@ -42,4 +38,10 @@ if (file_exists("image.jpg")) {
 </form>
     ";
 }
-else print "You have not selected an image yet!";
+else print "
+<form action='uploadImg.php' method='post' enctype='multipart/form-data'>
+    <input type='file' name='image' accept='image/jpeg'>
+    <button type='submit'>Submit image</button>
+</form>
+You have not selected an image yet!
+";
