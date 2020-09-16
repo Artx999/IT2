@@ -11,7 +11,7 @@
                 if (filter.includes(i)) continue
                 // document.getElementById("info").innerHTML = document.getElementById("info").innerHTML + " " + i + ":" + json[i] + "<br/>";
                 let content = document.getElementById("info").innerHTML
-                document.getElementById("info").innerHTML = content + "<tr><td>" + i + "</td><td>" + json[i] + "</td></tr>"
+                document.getElementById("info").innerHTML = content + "<tr id='" + i + "'><td>" + i + "</td><td>" + json[i] + "</td></tr>"
             }
             let latRef = json.GPSLatitudeRef; let lat =  json.GPSLatitude
             let longRef = json.GPSLongitudeRef; let long = GPSLongitude
@@ -39,7 +39,7 @@ if (file_exists("image.jpg")) {
     print "<img src='image.jpg' alt='image' id='img' onload='getExif()'>";
     print "
 <table id='info'>
-    <tr>
+    <tr id='thead'>
         <th>Tag</th>
         <th>Info</th>
     </tr>
