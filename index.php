@@ -3,7 +3,5 @@
 <script>setTitle("Hjem")</script>
 <?php require "build/nav.php" ?>
 <header>
+    <img src="coding.jpg">
 </header>
-<code>
-    #main {color: yellow}
-</code>

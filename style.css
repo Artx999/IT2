@@ -30,6 +30,12 @@ nav ul .navItem a {
     text-decoration: none;
     color: var(--txtColor);
 }
+/* Header */
+header img {
+    display: flex;
+    height: 80vh;
+    margin: 5vh auto;
+}
 
 /* Projects */
 #projects {
