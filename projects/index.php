@@ -8,4 +8,5 @@
     <li class="projectElement"><a href="Kart">Kart</a></li>
     <li class="projectElement"><a href="EXIF">EXIF</a></li>
     <li class="projectElement"><a href="GSAP">GSAP</a></li>
+    <li class="projectElement"><a href="Kapittel8">Kapittel 8</a></li>
 </ul>
