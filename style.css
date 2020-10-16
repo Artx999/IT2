@@ -39,8 +39,15 @@ header img {
 }
 
 /* Main */
-main#kapittel8 {
+main {
     margin: 1vw;
+}
+main#ringve {
+    margin: 1vw;
+}
+#ringve img {
+    width: 99%;
+    margin-top: 3vh;
 }
 
 /* Projects */

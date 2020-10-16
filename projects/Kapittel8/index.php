@@ -2,7 +2,7 @@
 <?php require $rootPath . "build/head.php" ?>
     <script>setTitle("Hjem")</script>
 <?php require $rootPath . "build/nav.php" ?>
-<main id="kapittel8">
+<main id="kap8">
     <h2>1. Hva er et dataprogram?</h2>
     <p>En slags oppskrift som forteller datamaskinen hva den skal gjøre, steg for steg.</p>
     <h2>2. Forklar forskjellen mellom serversiden og klientsiden for programmer på nett.</h2>
